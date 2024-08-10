@@ -53,7 +53,7 @@
     <script src="script.js"></script>
 </body>
 </html>
-    <style>/* General Styles (unchanged) */
+    <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
@@ -100,7 +100,7 @@
             border-radius: 4px;
         }
         
-        /* Container and Background Patterns (unchanged) */
+      
         .container {
             display: flex;
             justify-content: center;
@@ -139,7 +139,7 @@
             background-color: #dedede;
         }
         
-        /* Login Container Styles */
+    
         .login-container {
             position: relative;
             z-index: 1;
@@ -200,8 +200,7 @@
             position: relative;
             z-index: 2;
         }
-        
-        /* Mobile Styles */
+    
         @media (max-width: 600px) {
             .container {
                 height: auto;
@@ -255,7 +254,7 @@
     
     </style>
     <script>document.getElementById('login-form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the form from submitting the traditional way
+        event.preventDefault(); 
     
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
